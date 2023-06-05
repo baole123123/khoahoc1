@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var value = prompt("nhập giá trị cần tìm");
+        var so = [-3, 5, 1, 3, 2, 10];
+         var index = 0;
+            for ( var i = 0; i < so.length; i++ ){
+                if ( value == so[i]){
+                    index =i;
+                }
+
+            }
+            if(index>0){
+               alert("tìm thấy giá trị");
+            }
+            else{
+                alert("Không tìm thấy giá trị");
+            }
+        // var mang = [2, 5, 13, 7, 9, 12, 8, 1, 15, 6];
+        // var sophantulonhonhoacbang10 = 0;
+        //    for ( var i = 0; i < mang.length; i++){
+        //       if ( mang[i]>= 10){
+        //         sophantulonhonhoacbang10++;
+
+        //       }
+        //    }
+        //    console.log("có" +  sophantulonhonhoacbang10 + "phần tử lớn hơn hoặc bằng 10 trong mảng");
+    </script>
+</body>
+</html>

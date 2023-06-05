@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let numbers = [2, 5, 13, 7, 9, 12, 8, 1, 15, 6];
+      // let max = numbers[0];
+      // let index = 0;
+      // for (let i = 0; i < numbers.length; i++) {
+      //   if (numbers[i] > max) {
+      //     max = numbers[i];
+      //     index = i;
+      //   }
+      // }
+      // console.log("max: " + max + " nằm ở vị trí " + index);
+
+
+    let mang = [2, 5, 13, 7, 9, 12, 8, 1, 15, 6];
+    let giatrilonnhat = mang[0];
+    let tongcacphantu = 0;
+      for ( let i = 0; i < mang.length; i++){
+        if ( mang[i] > giatrilonnhat) {
+            giatrilonnhat = mang[i];                
+      }
+      tongcacphantu += mang[i];
+    }   
+    let giatritrungbinh = tongcacphantu / mang.length;
+
+       console.log("Giá trị lớn nhất trong mảng là: " + giatrilonnhat);
+       console.log("Giá trị trung bình của các phần tử trong mảng là: " + giatritrungbinh);
+   
+
+
+      
+    </script>
+  </body>
+</html>

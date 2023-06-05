@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    //     var nguyento = parseInt(prompt("nhập số cần check"));
+    //      function nhapSo(number){
+    //         var count = 0;
+    //         var nhapSo = false;
+    //         if (number == 0){
+    //             alert( number + "không là số nguyên tố");   
+    //         } else {
+    //             for (var i = 1; i <= number; i++) {
+    //               if ( number % i == 0){
+    //                  count +=1;
+    //               }
+    //         }
+    //      }
+    //         if (count == 2){
+    //             nhapSo = true;
+    //         }  
+    //         if ( nhapSo ) {
+    //             alert(number + "là số nguyên tố")
+    //         }else {
+    //             alert(number + "không là số nguyên tố")
+    //         }
+    //     }
+    //  nhapSo(nguyento);
+//  </script> -->
+     
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+  oninput="temperatureConverter(this.value)"
+  onchange="temperatureConverter(this.value)">
+</p>
+<p>Celsius: <span id="outputCelsius"></span></p>
+        <script>
+            function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+    }
+        </script>
+</body>
+</html>

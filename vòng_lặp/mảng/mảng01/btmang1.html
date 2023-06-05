@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var mang = [10,3,6,14,15,2,6];
+      // var giatrilonhonhoacbang10 = 0;
+      // for ( var i = 0; i < mang.length; i++){
+      //     if ( mang[i] >= 10){
+      //         giatrilonhonhoacbang10++;
+      //     }
+      // }
+      // console.log(giatrilonhonhoacbang10);
+
+      // var mang = [10,3,6,14,15,2,6];
+      // var max = mang[0];
+      // var index = 0;
+      // for ( var i = 0; i < mang.length; i++){
+      //     if ( mang[i] > max){
+      //         max = mang[i];
+      //         index = i;
+      //     }
+      // }
+      // console.log("max;"  + max + "nằm ở vị trí" + index );
+
+      let x = [-3, 5, 1, 3, 2, 10];
+     let dau = 0;
+     let cuoi = x.length -1;
+       while ( dau < cuoi ) {
+            let b = x[dau];
+            x[dau] = x[cuoi];
+            x[cuoi] = b;
+            dau++;
+            cuoi--;
+       }
+       document.write(x);
+    </script>
+  </body>
+</html>
